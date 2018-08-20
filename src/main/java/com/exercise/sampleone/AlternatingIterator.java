@@ -35,17 +35,6 @@ public class AlternatingIterator<E> implements Iterator<E> {
 		head = head.getNext();
 		return data;
 	}
-
-	public void printAll() {
-		Node<E> temp = head;
-		String comaSpace = "";
-		while (null != temp) {
-			String data = comaSpace + temp.getData();
-			System.out.print(data);
-			temp = temp.getNext();
-			comaSpace = ", ";
-		}
-	}
 	
 	private boolean isValidData(E data) {
 		if (null != data) {
